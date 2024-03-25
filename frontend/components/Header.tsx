@@ -3,8 +3,6 @@ import { useRouter } from 'next/router';
 
 import { SearchIcon } from '@heroicons/react/outline';
 
-import AnimeflixIcon from '@components/AnimeFlixIcon';
-
 const Header: React.FC<{}> = () => {
   const router = useRouter();
 
@@ -18,8 +16,9 @@ const Header: React.FC<{}> = () => {
   return (
     <header className="sticky top-0 z-[51] flex h-12 w-full items-center bg-gray-900 shadow-md">
       <Link href="/" passHref>
-        <a>
-          <AnimeflixIcon className="ml-4 h-7 w-7 cursor-pointer sm:ml-6" />
+        <a className="ml-10 text-white">
+          {/* <AnimeflixIcon className="ml-4 h-7 w-7 cursor-pointer sm:ml-6" /> */}
+          HOME
         </a>
       </Link>
 
